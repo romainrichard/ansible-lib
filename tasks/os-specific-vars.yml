@@ -11,5 +11,5 @@
   with_first_found:
     - "vars/{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
     - "vars/{{ ansible_distribution }}.yml"
-    - "{{ playbook_dir }}/roles/silpion.lib/vars/os-specific/noop.yml"
+    - "{{ role_path }}/../silpion.lib/vars/os-specific/noop.yml"
   include_vars: "{{ item }}"
